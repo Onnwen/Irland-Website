@@ -1,0 +1,222 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.white {
+    background-color: white;
+    color: black;
+    left: 0;
+    width: 100%;
+    border-radius: 1px;
+    width:100%;
+}
+
+.content {
+  padding-top: 0px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    left: 0;
+    width: 100%;
+    border-radius: 1px;
+    width:100%;
+}
+
+.text {
+    max-width: 850px;
+    margin: 50 auto !important;
+    float: none !important;
+}
+
+body {
+	margin: 0 auto !important; 
+	float: none !important;
+}
+
+p {
+	text-align: justify;
+	/*
+  	margin-left: 20px;
+  	margin-right: 20px;
+  	*/
+  	margin-top: 5px;
+  	font-family: Avenir, Helvetica, sans-serif;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 15;
+	margin:0;
+	font-family: Avenir, Helvetica, sans-serif;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 12;
+	letter-spacing: 1px;
+	margin:0;
+	font-family: Avenir, Helvetica, sans-serif;
+	/*
+	margin-left: 20px;
+  	margin-right: 20px;
+  	*/
+}
+
+h1, h2, h5, h6 {
+	font-family: Avenir, Helvetica, sans-serif;
+	transition: .5s;
+	transition-timing-function: ease-in-out;
+}
+
+h1 {
+    font-family: theartisan;
+	font.font-weight: normal;
+    height: 70px;
+}
+
+.nav ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.nav li {
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.nav a:hover {
+  color: gray;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    padding: 20px;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
+
+h1:hover {
+	font-family: Avenir;
+}
+
+h5 {
+	font-weight: normal;
+}
+
+
+img, div {
+/*
+	transition: .5s;
+	transition-timing-function: ease-in-out;
+	*/
+}
+
+img.jc:hover {
+	height: 210px;
+	filter: brightness(1.2);
+	box-shadow: 0px 0px 100px black;
+}
+
+img.tutorial:hover {
+	width: 510px;
+}
+
+a {
+	text-decoration: none;
+    transition: .3s;
+    color: #1a4fa3;
+    text-align: justify;
+  	font-family: Avenir, Helvetica, sans-serif;
+}
+
+a.black {
+    color: white;
+}
+
+a.black:hover {
+	opacity: 0.75;
+	text-shadow: 0px 0px 5px white;
+}
+
+a.white:hover {
+	opacity: 0.5;
+}
+
+/* link non visitati */ 
+a:link {  
+} 
+
+/* link visitati */ 
+a:visited {  
+} 
+
+/* link su cui si posa il cursore del mouse */ 
+a:hover { 
+	/*font-style: italic;*/
+	color: #e87d0b; 
+}
+
+/* link nel momento del click con il mouse */ 
+a:active { 
+	opacity: 0.5;
+}
+
+@font-face {
+    font-family: 'theartisan'; 
+    src: url('the artisan.otf'); 
+}
+
+@font-face {
+    font-family: 'Avenir'; 
+    src: url('avenir.ttc'); 
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
