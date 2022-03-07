@@ -2,26 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.white {
-    background-color: white;
-    color: black;
-    left: 0;
-    width: 100%;
-    border-radius: 1px;
-    width:100%;
+.column {
+  float: left;
+  width: 33.33%;
 }
 
-.content {
-  padding-top: 0px;
-}
-
-.black {
-    background-color: black;
-    color: white;
-    left: 0;
-    width: 100%;
-    border-radius: 1px;
-    width:100%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .text {
@@ -80,9 +70,9 @@ h1 {
   text-align: center;
   padding: 0;
   margin: 0;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .sticky {
@@ -96,13 +86,16 @@ h1 {
   padding-top: 60px;
 }
 
+.nav {
+  z-index: 5;
+}
+
 .nav li {
   border-bottom: 1px solid #888;
 }
 
 .nav a {
   color: black;
-  text-decoration: none;
   display: block;
 }
 
@@ -138,6 +131,28 @@ h1 {
   */
 }
 
+.white {
+    background-color: white;
+    color: black;
+    left: 0;
+    width: 100%;
+    border-radius: 1px;
+    width:100%;
+}
+
+.content {
+  padding-top: 0px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    left: 0;
+    width: 100%;
+    border-radius: 1px;
+    width:100%;
+}
+
 h1:hover {
 	font-family: Avenir;
 }
@@ -148,6 +163,7 @@ h5 {
 
 
 img, div {
+ z-index: 1;
 /*
 	transition: .5s;
 	transition-timing-function: ease-in-out;
