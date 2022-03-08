@@ -11,21 +11,25 @@
 <body>
 
 <center>
-    <img src="immagini/logo.jpg" alt="Impossibile caricare la fotografia." style="width:550px" align="center">
+    <img src="immagini/logo3.jpg" alt="Impossibile caricare la fotografia." style="width:500px; margin-bottom: -25;"
+         align="center">
+    <p style="text-align: center;"><img src="Immagini/fg.png" height="50" style=" margin-top: -20; opacity: 0.75;"></p>
 </center>
 
 
 <div id="nav">
-    <div class="white">
-        <div class="nav">
-            <ul>
-                <li><a href="#bank">Bank</a></li>
-                <li><a href="#president">President</a></li>
-                <li><a href="#insights">Insights</a></li>
-                <li><a href="#lobby">Lobby</a></li>
-                <li><a href="#customers">Customers</a></li>
-                <li><a href="#customers">GBSC Access</a></li>
-            </ul>
+    <div id="white">
+        <div class="white">
+            <div class="nav">
+                <ul>
+                    <li><a href="#bank">Bank</a></li>
+                    <li><a href="#president">President</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#lobby">Lobby</a></li>
+                    <li><a href="#customers">Customers</a></li>
+                    <li><a href="#customers">GBSC Private Access</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -34,7 +38,7 @@
 
     <a name="bank"></a>
     <center>
-        <img src="immagini/bank.jpg" alt="Impossibile caricare la fotografia." style="width:100%;"
+        <img src="immagini/bank1.jpg" alt="Impossibile caricare la fotografia." style="width:100%;"
              align="center">
     </center>
     <div class="text">
@@ -70,10 +74,10 @@
     <div class="black">
         <div class="text">
             <a name="president"></a>
-            <div style=" position:relative; display: inline-block">
+            <div style=" position:relative; display: inline-block; z-index: 0;">
                 <p>
-                    <img src="immagini/president.jpg" alt="Impossibile caricare la fotografia."
-                         style="width: 350px; position: absolute; z-index: 4; bottom: 0px; right: -150px;">
+                    <img src="immagini/president.png" alt="Impossibile caricare la fotografia."
+                         style="width: 325px; position: absolute; z-index: 4; bottom: 0px; right: -150px;">
                 <h2 style="padding-top: 75px;">Our President</h2>
                 <h3>CASSITTO L. ONNWEN L. G.</h3>
                 <br>
@@ -154,35 +158,38 @@
                         happy. We
                         have a satisfaction rate of almost 100% and we are recommended all over the world.
                     </p>
+                    <br/>
+                    <br/>
                 </center>
             </div>
         </div>
     </div>
 
 
-    <div class="black">
+    <div class="gray">
         <div class="text">
             <a name="lobby"></a>
-            <h2 style="padding-top: 50px;">Lobby</h2>
+            <h2 style="padding-top: 70px;">Lobby</h2>
             <p>
-                Incompleto
+                The New York Times titled «<a
+                    href="https://www.nytimes.com/2021/07/08/business/ireland-minimum-corporate-tax.html"
+                    style="color: black;">Ireland's Days
+                as a Tax Haven May Be Ending, but Not Without a Fight</a>», but we didn't say our last word. Our private
+                lobbyists work hard at the parliamentarians of the European and Irish parliaments to prevent an unfair
+                blockade of fiscal freedom. Every cent represents colossal sums of money and these reforms should not be
+                treated lightly and populistically.
                 <br/>
                 <br/>
             </p>
         </div>
     </div>
 
-    <div class="black">
-        <div class="text">
-            <a name="customers"></a>
-            <br>
-            <h2 style="padding-top: 50px;">Customers</h2>
-            <p>
-                Incompleto
-                <br/>
-                <br/>
-            </p>
-        </div>
+    <div class="text">
+        <a name="customers"></a>
+        <h2 style="padding-top: 70px;">Customers</h2>
+        <p>
+            Incompleto
+        </p>
     </div>
     </p>
     </p>
@@ -202,20 +209,18 @@ window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("nav");
 var sticky = navbar.offsetTop;
+var white = document.getElementById("white");
+var blur = document.getElementById("blur");
 
 function myFunction() {
   if (window.pageYOffset >= sticky - 5) {
     navbar.classList.add("sticky")
+    white.classList.add("blur");
   } else {
     navbar.classList.remove("sticky");
+    white.classList.remove("blur");
   }
 }
-
-
-
-
-
-
 </script>
 
 </body>

@@ -1,3 +1,6 @@
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,17 +10,103 @@ html {
   width: 33.33%;
 }
 
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+ -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://placehold.it/350x150');
+    background-position: center top;
+}
+.form input {
+  outline: 0;
+  background:  rgba(0, 0, 0, 0.25);
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: black;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: gray;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.text {
-    max-width: 850px;
-    margin: 50 auto !important;
-    float: none !important;
 }
 
 body {
@@ -132,12 +221,19 @@ h1 {
 }
 
 .white {
-    background-color: white;
+    background-color: transparent;
     color: black;
     left: 0;
     width: 100%;
     border-radius: 1px;
     width:100%;
+}
+
+.blur {
+ -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background: linear-gradient(rgba(245, 245, 245, 0.35), rgba(245, 245, 245, 0.35)), url('http://placehold.it/350x150');
+    background-position: center top;
 }
 
 .content {
@@ -151,6 +247,21 @@ h1 {
     width: 100%;
     border-radius: 1px;
     width:100%;
+}
+
+.gray {
+    background-color: #f7f7f7;
+    color: black;
+    left: 0;
+    width: 100%;
+    border-radius: 1px;
+    width:100%;
+}
+
+.text {
+    max-width: 850px;
+    margin: 50 auto !important;
+    float: none !important;
 }
 
 h1:hover {
@@ -183,7 +294,7 @@ img.tutorial:hover {
 a {
 	text-decoration: none;
     transition: .3s;
-    color: #1a4fa3;
+    opacity: 0.65;
     text-align: justify;
   	font-family: Avenir, Helvetica, sans-serif;
 }
@@ -212,7 +323,7 @@ a:visited {
 /* link su cui si posa il cursore del mouse */ 
 a:hover { 
 	/*font-style: italic;*/
-	color: #e87d0b; 
+	opacity: 0.25;
 }
 
 /* link nel momento del click con il mouse */ 
