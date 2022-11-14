@@ -324,11 +324,15 @@ a.white:hover {
 }
 
 /* link non visitati */ 
-a:link {  
+a:link {
+    color: black;
+    opacity: 0.75;
 } 
 
 /* link visitati */ 
-a:visited {  
+a:visited {
+    color: black;
+    opacity: 0.75;
 } 
 
 /* link su cui si posa il cursore del mouse */ 
