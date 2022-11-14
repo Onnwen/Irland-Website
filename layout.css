@@ -25,9 +25,9 @@ html {
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5), 0 0px 0px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
- -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://placehold.it/350x150');
+ -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: center top;
 }
 .form input {
@@ -49,8 +49,8 @@ html {
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
@@ -126,14 +126,14 @@ p {
 
 h4 {
 	font-weight: bold;
-	font-size: 15;
+	font-size: 15px;
 	margin:0;
 	font-family: Avenir, Helvetica, sans-serif;
 }
 
 h3 {
 	font-weight: bold;
-	font-size: 12;
+	font-size: 12px;
 	letter-spacing: 1px;
 	margin:0;
 	font-family: Avenir, Helvetica, sans-serif;
@@ -151,7 +151,7 @@ h1, h2, h5, h6 {
 
 h1 {
     font-family: theartisan;
-	font.font-weight: normal;
+	font-weight: normal;
     height: 70px;
 }
 
@@ -227,13 +227,24 @@ h1 {
     width: 100%;
     border-radius: 1px;
     width:100%;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.0);
 }
 
 .blur {
- -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background: linear-gradient(rgba(245, 245, 245, 0.35), rgba(245, 245, 245, 0.35)), url('http://placehold.it/350x150');
+/*
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background: linear-gradient(rgba(240, 240, 240, 0.5), rgba(240, 240, 240, 0.5), url('http://placehold.it/350x150'));
     background-position: center top;
+    */
+    -webkit-backdrop-filter: saturate(1.8) blur(20px);
+    -webkit-font-smoothing: antialiased;
+    background-color: rgba(255, 255, 255, 0.72);
+    box-sizing: content-box;
+    color: rgb(29, 29, 31);
+    direction: ltr;
+    display: block;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.5);
 }
 
 .content {
@@ -260,7 +271,7 @@ h1 {
 
 .text {
     max-width: 850px;
-    margin: 50 auto !important;
+    margin: 50px auto !important;
     float: none !important;
 }
 
